@@ -1,5 +1,4 @@
 
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
@@ -17,6 +16,10 @@ public class GetMail {
 	private ArrayList<String> domains = new ArrayList<String>();
 	private LinkedHashSet<String> siteNotFound = new LinkedHashSet<String>();
 	private LinkedHashMap<String, LinkedHashSet<String>> emails = new LinkedHashMap<String, LinkedHashSet<String>>();
+
+	public GetMail() {
+
+	}
 
 	public GetMail(ArrayList<String> query) {
 		this.query = query;
@@ -85,22 +88,4 @@ public class GetMail {
 		return emails;
 	}
 
-	public static void main(String[] args) {
-
-		ArrayList<String> query = new ArrayList<String>();
-
-		query.add("экмус");
-		query.add("экоумвельт");
-		query.add("течпорт");
-		query.add("30-06");
-		query.add("эльдорадо");
-		query.add("м видео");
-		query.add("яндекс");
-		query.add("аврвпыпывпвпфурпо");
-		query.add("аврвпыпывпgsdgsgsво");
-		query.add("аврвпыпывпвпgxdgdфурпо");
-		GetMail gm = new GetMail(query);
-		System.out.println(gm.getMail());
-
-	}
 }

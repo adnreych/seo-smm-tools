@@ -10,8 +10,18 @@
   	<description></description>
   	<servlet-class>GetMailServlet</servlet-class>
   </servlet>
+    <servlet>
+  	<servlet-name>SpellerServlet</servlet-name>
+  	<display-name>SpellerServlet</display-name>
+  	<description></description>
+  	<servlet-class>SpellerServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>GetMailServlet</servlet-name>
   	<url-pattern>/GetMailServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SpellerServlet</servlet-name>
+  	<url-pattern>/SpellerServlet</url-pattern>
   </servlet-mapping>
 </web-app>
